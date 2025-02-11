@@ -47,7 +47,7 @@
 .touchgrass {
     background-color: rgb(245, 201, 119) ;
     width: 130px;
-    margin: 175px auto 0px auto;
+    margin: 150px auto 0px auto;
     bottom: 10px;
 }
 
@@ -59,6 +59,6 @@
 
 .real_link {
     background-color: rgb(241, 53, 53) ;
-    width: 675px;
+    width: 650px;
     margin: 20px auto;
 }
