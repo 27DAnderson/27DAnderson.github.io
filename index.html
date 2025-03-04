@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>27DAnderson Home</title>
-    <link rel="stylesheet" type="text/css" href="/index.css" />
+    <title>My Website</title>
+    <link id="style" rel="stylesheet" href="css/light.css">
+    <script src="js/scripts.js"></script>
 </head>
-<body id="body">
-    <h1 class="center fontfamily title">Dylan Anderson</h1>
-    <h2 class="center fontfamily heading">Hello There</h2>
-    <img class="pfp" src="/pfp.png" alt="Profile Picture Of Big Orange D">
-    <p class="center fontfamily fontsize home_link">Home Page: <a href="https://27danderson.github.io/">https://27danderson.github.io/</a></p>
-    <p class="center fontfamily fontsize game_link">Get To School 6: <a href="https://27danderson.github.io/gettoschool6">https://27danderson.github.io/gettoschool6</a></p>
-    <p class="center fontfamily fontsize real_link"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">The secret to life, the universe and everything</a></p>
-    <p class="center fontfamily touchgrass">(Go Touch Grass)</p>
+<body>
+    <div id="toolbar">
+        <div id="buttons">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#" onclick="switchmode()">Mode</a>
+        </div>
+        <a href="#" onclick="showhide()">☰</a>
+    </div>
 </body>
 </html>
