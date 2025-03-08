@@ -1,24 +1,12 @@
+body {
+    background-color: #fff;
+}
+
 #toolbar {
     background-color: #333;
 }
 
-#toolbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-#toolbar li {
-    float: left;
-    height: 38px;
-}
-
-#buttons {
-    display: block;
-}
-
-li a {
+#toolbar li a {
     display: block;
     color: #fff;
     text-align: center;
@@ -31,7 +19,7 @@ li a:hover {
     background-color: #111;
 }
 
-li:last-child {
+#toolbar li:last-child {
     border-right: none;
     border-left: 1px solid #fff;
 }
@@ -44,7 +32,7 @@ li:last-child {
     background-color: #ce3d10;
 }
 
-p, h1, h2, h3, li {
+p, h1, h2, h3, h4, h5, h6 li {
     color: #000;
 }
 
@@ -59,8 +47,18 @@ p, h1, h2, h3, li {
     border-color: #333;
 }
 
-#funText {
-    text-align: center;
-    text-decoration: none;
-    margin-top: 30px;
+#hobbies {
+    width: 625px;
+    background-color: #32cd32;
+    margin-bottom: 20px;
+    padding-left: 10px
+}
+
+#likes {
+    background-color: #E9967A;
+    padding-left: 10px;
+}
+
+.intro {
+    background-color: #7fffd4;
 }
