@@ -1,0 +1,191 @@
+#toolbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#toolbar li {
+    float: left;
+    height: 38px;
+}
+
+#buttons {
+    display: block;
+}
+
+#funText {
+    text-align: center;
+    text-decoration: none;
+    margin-top: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#pets {
+    height: 500px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 0px;
+    display: block;
+}
+
+#hobbies {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: small;
+}
+
+#likes {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: small;
+}
+
+.intro {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 650;
+    padding-left: 10px;
+}
+
+#petsText {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    float: right;
+    margin-right: 90px;
+    margin-top: 365px;
+}
+
+#secret1 {
+    text-align: center;
+    margin-top: 200px;
+}
+
+#secret2 {
+    text-align: center;
+}
+
+#secret3 {
+    text-align: center;
+    margin-top: 400px;
+}
+
+#newPetsText {
+    display: none;
+    margin-left: 50px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+@media screen and (max-width: 1910px) {
+    #pets {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    #hobbies {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        padding-right: 10px;
+    }
+
+    #likes {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        padding-right: 10px;
+    }
+
+    #petsText {
+        display: none;
+    }
+
+    .intro {
+        text-align: center;
+        margin: 10 auto;
+    }
+
+    .pfp {
+        width: 80%;
+    }
+
+    #newPetsText {
+        display: block;
+        font-family: "Jost", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        margin-left: 8px;
+        margin-bottom: -2px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    #secret1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #secret3 {
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+    }
+
+    #newPetsText {
+        width: 100px;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    #secret1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #secret3 {
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 670px) {
+    #newPetsText {
+        font-size: smaller;
+        width: 62px;
+    }
+}
+
+@media screen and (max-height: 550px) {
+    #newPetsText {
+        font-size: xx-small;
+        width: 42px;
+    }
+}
+
+@media screen and (max-height: 250px) {
+    #secret1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #secret3 {
+        margin-top: 100px;
+        position: static;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    #pets {
+        width: 50%;
+        height: auto;
+    }
+}
