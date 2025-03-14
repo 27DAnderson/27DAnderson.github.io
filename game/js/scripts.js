@@ -2,35 +2,30 @@
 let stylemode = document.cookie;
 let stylelink = document.getElementById('style');
 
-toolbar = document.getElementById('toolbar')
-menuButton = document.getElementById('menuButton')
-
-let pets = document.getElementById('pets')
+let toolbar = document.getElementById('toolbar')
+let menuButton = document.getElementById('menuButton')
 
 if (stylemode === 'dark') {
-    stylelink.href = 'css/dark.css';
-    pets.src = 'img/pets_dark.png';
+    stylelink.href = '../css/dark.css';
 } else {
-    stylelink.href = 'css/light.css';
-    pets.src = 'img/pets_light.png';
-    document.cookie = 'light';
+    stylelink.href = '../css/light.css';
+    document.cookie = 'light;path=/';
 }
 
 function switchmode() {
     if (stylemode === 'light') {
         stylemode = 'dark';
-        stylelink.href = 'css/dark.css';
-        document.cookie = 'dark';
-        pets.src = 'img/pets_dark.png';
+        stylelink.href = '../css/dark.css';
+        document.cookie = 'dark;path=/';
         toolbar.style.backgroundColor = '#ffffff';
         menuButton.style.backgroundColor = '#ffffff';
     } else {
         stylemode = 'light';
-        stylelink.href = 'css/light.css';
-        document.cookie = 'light';
-        pets.src = 'img/pets_light.png';
+        stylelink.href = '../css/light.css';
+        document.cookie = 'light;path=/';
         toolbar.style.backgroundColor = '#333333';
         menuButton.style.backgroundColor = '#333333';
+
     }
 }
 
@@ -38,7 +33,7 @@ function switchmode() {
 function showhide() {
     let toolbarbuttons = document.getElementById('buttons');
 
-    if (document.cookie === 'light') {
+    if (stylemode === 'light') {
         if (toolbarbuttons.style.display === 'none') {
             toolbarbuttons.style.display = 'block';
             toolbar.style.backgroundColor = '#333333';
@@ -48,7 +43,7 @@ function showhide() {
             toolbar.style.backgroundColor = '#ffffff';
             menuButton.style.backgroundColor = '#333333';
         }
-    } else if (document.cookie === 'dark') {
+    } else if (stylemode === 'dark') {
         if (toolbarbuttons.style.display === 'none') {
             toolbarbuttons.style.display = 'block';
             toolbar.style.backgroundColor = '#ffffff';
@@ -58,14 +53,5 @@ function showhide() {
             toolbar.style.backgroundColor = '#333333';
             menuButton.style.backgroundColor = '#ffffff';
         }
-    }
-}
-
-function coin() {
-    const randomNumber = Math.floor(Math.random() * 2);
-    if (randomNumber === 0) {
-        document.getElementById('coinImg').src = 'img/coin_top.png';
-    } else {
-        document.getElementById('coinImg').src = 'img/coin_bottom.png';
     }
 }
