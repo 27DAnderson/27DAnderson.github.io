@@ -58,11 +58,11 @@ p, h1, h2, h3, h4, h5, h6 li {
 }
 
 #likes a {
-    background-color: #fff;
+    color: darkblue;
 }
 
 #likes a:hover {
-    color: #9400d3;
+    color: darkviolet;
 }
 
 .intro {
