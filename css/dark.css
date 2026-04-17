@@ -3,7 +3,8 @@ body {
 }
 
 #toolbar {
-    background-color: #ddd;
+    background-color: #7e7e7e;
+    box-shadow: 0 2px 5px #00000080;
 }
 
 #toolbar li a {
@@ -16,10 +17,10 @@ body {
 }
 
 #toolbar li a:hover {
-    background-color: #eee;
+    background-color: #525252;
 }
 
-#toolbar li:last-child {
+#toolbar li:last-child a {
     border-right: none;
     border-left: 1px solid #000;
 }

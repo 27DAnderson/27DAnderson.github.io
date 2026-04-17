@@ -19,7 +19,7 @@ body {
     background-color: #111;
 }
 
-#toolbar li:last-child {
+#toolbar li:last-child a {
     border-right: none;
     border-left: 1px solid #fff;
 }
