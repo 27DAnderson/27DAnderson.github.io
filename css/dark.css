@@ -3,7 +3,8 @@ body {
 }
 
 #toolbar {
-    background-color: #ddd;
+    background-color: #7e7e7e;
+    box-shadow: 0 2px 5px #00000080;
 }
 
 #toolbar li a {
@@ -16,10 +17,10 @@ body {
 }
 
 #toolbar li a:hover {
-    background-color: #eee;
+    background-color: #525252;
 }
 
-#toolbar li:last-child {
+#toolbar li:last-child a {
     border-right: none;
     border-left: 1px solid #000;
 }
@@ -71,4 +72,12 @@ p, h1, h2, h3, h4, h5, h6, li {
 
 #newPetsText {
     background-color: #008000;
+}
+
+.grid-item {
+    background-color: #4b4b4b;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
 }
