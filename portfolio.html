@@ -7,6 +7,7 @@
     <title>Dylan Anderson</title>
     <link id="style" rel="stylesheet" href="css/light.css">
     <link id="style" rel="stylesheet" href="css/both.css">
+    <link rel="stylesheet" href="css/portfolio.css">
 </head>
 
 <body>
@@ -27,11 +28,24 @@
 
 
     <h1>My Portfolio</h1>
+    <h2>Best Projects</h2>
 
-    <!-- <img src="img/portfolio/morsethumbnail.png" alt="">
-    <a href="files/Two_Way Morse Code Translator.py" download="Two_Way Morse Code Translator.py">
-        <button type="button">Download</button>
-    </a> -->
+    <div class="grid-container">
+        <a href="files/Two_Way Morse Code Translator.py" download="Two_Way Morse Code Translator.py">
+            <div class="grid-item">
+                <img id="morseThumbnail" src="img/portfolio/morsethumbnail.png" alt="">
+                <p id="morseDescription">A two-way Morse code translator made in Python. <br><br> Click on this tile to download.</p>
+            </div>
+        </a>
+        <div class="grid-item">
+            <img id="mwkThumbnail" src="img/portfolio/MWK Final Icon.png" alt="">
+            <p id="mwkDescription">MouseWithKeyboard: A fully made utility in Python. <br>Can be found at <a class="projectLink" href="https://github.com/Dillyfire555/MouseWithKeyboard" target="_blank">https://github.com/Dillyfire555/MouseWithKeyboard</a>.</p>
+        </div>
+        <div class="grid-item">
+            <img id="gamebarThumbnail" src="img/portfolio/gamebar.png" alt="">
+            <p>Currently "employed" at GameBar. <br>Can be found at <a class="projectLink" href="https://github.com/ChrisM7896/GameBar" target="_blank">https://github.com/ChrisM7896/GameBar</a>.</p>
+        </div>
+    </div>
 
 </body>
 <script src="js/scripts.js"></script>

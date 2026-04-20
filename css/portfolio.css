@@ -1,0 +1,43 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(342px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.grid-item {
+    height: 300px;
+    width: 300px;
+}
+
+#morseThumbnail {
+    width: 300px;
+    height: auto;
+}
+
+#morseDescription {
+    font-size: 14px;
+}
+
+#mwkThumbnail {
+    width: 228px;
+    height: auto;
+}
+
+#mwkDescription {
+    font-size: 14px;
+}
+
+.projectLink {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+#gamebarThumbnail {
+    width: 228px;
+    height: auto;
+}

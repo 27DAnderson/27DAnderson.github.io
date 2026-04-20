@@ -9,10 +9,14 @@ let pets = document.getElementById('pets')
 
 if (stylemode === 'dark') {
     stylelink.href = 'css/dark.css';
-    pets.src = 'img/pets_dark.png';
+    if (pets) {
+        pets.src = 'img/pets_dark.png';
+    }
 } else {
     stylelink.href = 'css/light.css';
-    pets.src = 'img/pets_light.png';
+    if (pets) {
+        pets.src = 'img/pets_light.png';
+    }
     document.cookie = 'light';
 }
 
@@ -21,14 +25,18 @@ function switchmode() {
         stylemode = 'dark';
         stylelink.href = 'css/dark.css';
         document.cookie = 'dark';
-        pets.src = 'img/pets_dark.png';
+        if (pets) {
+            pets.src = 'img/pets_dark.png';
+        }
         toolbar.style.backgroundColor = '#7e7e7e';
         menuButton.style.backgroundColor = '#7e7e7e';
     } else {
         stylemode = 'light';
         stylelink.href = 'css/light.css';
         document.cookie = 'light';
-        pets.src = 'img/pets_light.png';
+        if (pets) {
+            pets.src = 'img/pets_light.png';
+        }
         toolbar.style.backgroundColor = '#333333';
         menuButton.style.backgroundColor = '#333333';
     }
