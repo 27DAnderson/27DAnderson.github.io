@@ -25,14 +25,21 @@ body {
 }
 
 #active {
-    background-color: #f4511e; /*w3schools green: #04AA6D;*/
+    background-color: #f4511e;
+    /*w3schools green: #04AA6D;*/
 }
 
 #active a:hover {
     background-color: #ce3d10 !important;
 }
 
-p, h1, h2, h3, h4, h5, h6 li {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 li {
     color: #000;
 }
 
@@ -80,5 +87,12 @@ p, h1, h2, h3, h4, h5, h6 li {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
+    text-align: center;
+}
+
+.portfolio-title {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    color: #000;
     text-align: center;
 }
